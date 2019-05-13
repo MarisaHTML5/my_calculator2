@@ -12,6 +12,7 @@
 <span>X</span>
 <input type="number" name="número2">
 <button type="button" class="btn btn-primary" onclick="multiplicar()">Multiplicar</button>
+<<<<<<< HEAD
 
 <button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
 <button type="button" class="btn btn-info" onclick="resetear()">Resetear</button>
@@ -19,6 +20,10 @@
 <button type="button" class="btn btn-warning" onclick="inverso()">inverso</button>
 
 
+=======
+<button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
+<h2>RESULTADO: </h2>
+>>>>>>> seno
 
 
 <h2>RESULTADO: </h2>
@@ -54,7 +59,6 @@
 
 
 		function seno(){
-			
 			alert("el seno del número primero es: "+Math.sin(numeros[0].value));
 		}
 
@@ -68,6 +72,12 @@
 		function inverso(){
 			var inverse = 1/numeros[0].value;
 			alert("el inverso es: "+inverse);
+		}
+
+
+		function seno(){
+			
+			alert("el seno del número primero es: "+Math.sin(numeros[0].value));
 		}
 
 </script>
