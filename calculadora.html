@@ -12,7 +12,10 @@
 <span>X</span>
 <input type="number" name="número2">
 <button type="button" class="btn btn-primary" onclick="multiplicar()">Multiplicar</button>
-<<<<<<< HEAD
+
+<button type="button" class="btn btn-danger" onclick="resetear()">resetear</button>
+
+
 
 <button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
 <button type="button" class="btn btn-info" onclick="resetear()">Resetear</button>
@@ -20,14 +23,12 @@
 <button type="button" class="btn btn-warning" onclick="inverso()">inverso</button>
 
 
-=======
+
 <button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
 <button type="button" class="btn btn-info" onclick="resetear()">Resetear</button>
 <h2>RESULTADO: </h2>
->>>>>>> seno
 
 
-<h2>RESULTADO: </h2>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -47,17 +48,8 @@
 			numeros[1].value = "";
 			document.getElementsByTagName("h2")[0].innerHTML = "RESULTADO";
 
-		}
-
-		function resetear(){
-			document.getElementsByTagName("h2")[0].innerHTML = "RESULTADO: ";
-			numeros[0].value = " ";
-			numeros[1].value = " ";
-
-
 
 		}
-
 
 		function seno(){
 			alert("el seno del número primero es: "+Math.sin(numeros[0].value));
@@ -75,21 +67,10 @@
 			alert("el inverso es: "+inverse);
 		}
 
-		function resetear(){
-			document.getElementsByTagName("h2")[0].innerHTML = "RESULTADO: ";
-			numeros[0].value = " ";
-			numeros[1].value = " ";
+		
 
 
-
-		}
-
-
-		function seno(){
-			
-			alert("el seno del número primero es: "+Math.sin(numeros[0].value));
-		}
-
+		
 </script>
 </body>
 </html>
