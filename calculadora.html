@@ -22,6 +22,7 @@
 
 =======
 <button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
+<button type="button" class="btn btn-info" onclick="resetear()">Resetear</button>
 <h2>RESULTADO: </h2>
 >>>>>>> seno
 
@@ -72,6 +73,15 @@
 		function inverso(){
 			var inverse = 1/numeros[0].value;
 			alert("el inverso es: "+inverse);
+		}
+
+		function resetear(){
+			document.getElementsByTagName("h2")[0].innerHTML = "RESULTADO: ";
+			numeros[0].value = " ";
+			numeros[1].value = " ";
+
+
+
 		}
 
 
