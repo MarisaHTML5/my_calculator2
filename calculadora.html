@@ -16,6 +16,7 @@
 <button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
 <button type="button" class="btn btn-info" onclick="resetear()">Resetear</button>
 <button type="button" class="btn btn-success" onclick="cuadrado()">Cuadrado</button>
+<button type="button" class="btn btn-warning" onclick="inverso()">inverso</button>
 
 
 
@@ -62,6 +63,11 @@
 		function cuadrado(){
 			var result = Math.pow(numeros[0].value, 2);
 			alert ("El resultado de elevar al cuadrado el primer número es: "+ result);
+		}
+
+		function inverso(){
+			var inverse = 1/numeros[0].value;
+			alert("el inverso es: "+inverse);
 		}
 
 </script>
