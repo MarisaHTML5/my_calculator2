@@ -13,8 +13,14 @@
 <input type="number" name="número2">
 <button type="button" class="btn btn-primary" onclick="multiplicar()">Multiplicar</button>
 
-<h2>RESULTADO: </h2>
+<button type="button" class="btn btn-danger" onclick="seno()">Seno N1</button>
+<button type="button" class="btn btn-info" onclick="resetear()">Resetear</button>
+<button type="button" class="btn btn-success" onclick="cuadrado()">Cuadrado</button>
 
+
+
+
+<h2>RESULTADO: </h2>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,9 +29,39 @@
 
 <script type="text/javascript">
 	
-		var numeros = document.getElementsByTagName("input");
+			var numeros = document.getElementsByTagName("input");
 		function multiplicar(){
-			document.getElementsByTagName("h2")[0].innerHTML += numeros[0].value*numeros[1].value;
+			var resultado = document.getElementsByTagName("h2")[0].innerHTML += numeros[0].value*numeros[1].value;
+			document.getElementsByTagName("h2").innerHTML += " " +resultado;
+		}
+
+		function resetear(){
+			numeros[0].value = "";
+			numeros[1].value = "";
+			document.getElementsByTagName("h2")[0].innerHTML = "RESULTADO";
+
+		}
+
+		function resetear(){
+			document.getElementsByTagName("h2")[0].innerHTML = "RESULTADO: ";
+			numeros[0].value = " ";
+			numeros[1].value = " ";
+
+
+
+		}
+
+
+		function seno(){
+			
+			alert("el seno del número primero es: "+Math.sin(numeros[0].value));
+		}
+
+
+//ops
+		function cuadrado(){
+			var result = Math.pow(numeros[0].value, 2);
+			alert ("El resultado de elevar al cuadrado el primer número es: "+ result);
 		}
 
 </script>
